@@ -1,0 +1,14 @@
+.nav {
+  height: 40px;
+}
+
+.logoContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.account {
+  position: absolute;
+  right: 15px;
+}
