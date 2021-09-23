@@ -66,8 +66,7 @@ export default function NavBar() {
     });
 
     Cookies.remove("casper_pub_key");
-    setAnchorEl(null);
-    return router.push("/");
+    return setAnchorEl(null);
   };
 
   return (
@@ -75,7 +74,7 @@ export default function NavBar() {
       <Alert
         open={showAlert}
         handleClose={() => setShowAlert(false)}
-        title={error}
+        title="Please connect to CasperLabs Signer"
         btnText="Close"
       >
         <Typography variant="body1">
