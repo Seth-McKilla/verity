@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 // Components
-import { Container } from "../components";
+import { Container, Content } from "../components";
 
 export default function Home() {
   const router = useRouter();
@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <Content>
         <Grid container spacing={2}>
           <Grid item xs={12} align="center">
             <div className={styles.logo}>
@@ -51,7 +51,7 @@ export default function Home() {
             </Button>
           </Grid>
         </Grid>
-      </main>
+      </Content>
     </Container>
   );
 }

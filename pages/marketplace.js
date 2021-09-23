@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 // Components
-import { Container } from "../components";
+import { Container, Content } from "../components";
 
 export default function Marketplace() {
   return (
@@ -19,13 +19,13 @@ export default function Marketplace() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <Content>
         <Grid container spacing={2}>
           <Grid item xs={12} align="center">
             <Typography variant="h3">Marketplace Placeholder</Typography>
           </Grid>
         </Grid>
-      </main>
+      </Content>
     </Container>
   );
 }
