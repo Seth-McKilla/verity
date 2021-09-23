@@ -76,22 +76,19 @@ export default function NavBar() {
         open={showAlert}
         handleClose={() => setShowAlert(false)}
         title={error}
-        children={
-          <>
-            <Typography variant="body1">
-              Need help setting up the CasperLabs Signer extension? The setup
-              instructions can be found{" "}
-              <Link
-                href="https://docs.casperlabs.io/en/latest/workflow/staking.html#creating-your-wallet-with-the-casperlabs-signer"
-                target="__blank"
-              >
-                here.
-              </Link>
-            </Typography>
-          </>
-        }
         btnText="Close"
-      />
+      >
+        <Typography variant="body1">
+          Need help setting up the CasperLabs Signer extension? The setup
+          instructions can be found{" "}
+          <Link
+            href="https://docs.casperlabs.io/en/latest/workflow/staking.html#creating-your-wallet-with-the-casperlabs-signer"
+            target="__blank"
+          >
+            here.
+          </Link>
+        </Typography>
+      </Alert>
 
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="sticky">
